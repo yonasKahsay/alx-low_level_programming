@@ -1,5 +1,9 @@
 #include <stdio.h>
-/**This will print hello world*/
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 char st[] = "\"Programming is like building a multilingual puzzle";/**string*/
