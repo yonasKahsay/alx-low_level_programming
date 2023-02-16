@@ -2,7 +2,7 @@
 /**This will print hello world*/
 int main(void)
 {
-char st[] = "\"Programming is like building a multilingual puzzle";/*string*/
+char st[] = "\"Programming is like building a multilingual puzzle";/**string*/
 
 puts(st);
 return (0);
