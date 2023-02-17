@@ -6,12 +6,14 @@
  */
 int main(void)
 {
-char alpha[] = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9\n";
-int i;
+int i = 0;
 
-for (i = 0; i < 28; i++)
+while (i < 10)
 {
-putchar(alpha[i]);
+putchar(i + '0');
+putchar('\, ');
+i++;
 }
+putchar('\n');
 return (0);
 }
