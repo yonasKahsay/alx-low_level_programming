@@ -34,11 +34,11 @@ l++;
 }
 else if ( i == 9 && j == 8 && k == 9 && l==9)
 {
-puts(i + '0');
-puts(j + '0');
+puts(i);
+puts(j);
 puts(' ');
-puts(k + '0');
-puts(l + '0');
+puts(k);
+puts(l);
 break;
 }
 else
