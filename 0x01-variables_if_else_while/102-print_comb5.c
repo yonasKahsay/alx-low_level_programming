@@ -31,7 +31,8 @@ putchar(l + '0');
 putchar(',');
 putchar(' ');
 l++;
-else if ( i == 9 && j == 8 && k == 9 && l =9)
+}
+else if ( i == 9 && j == 8 && k == 9 && l==9)
 {
 putchar(i + '0');
 putchar(j + '0');
@@ -39,7 +40,6 @@ putchar(' ');
 putchar(k + '0');
 putchar(l + '0');
 break;
-}
 }
 else
 {
