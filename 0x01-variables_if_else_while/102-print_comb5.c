@@ -15,19 +15,14 @@ while (i < 10)
 j = 0;
 while (j < 10)
 {
-k = i;
+k = 0;
 while (k < 10)
 {
-l = j;
-while (l < 9)
+l = 0;
+while (l < 10)
 {
-if (i == 9 && j == 8 && k == 9 && l == 9)
+if (((10 * i) + j) < ((10 * k) + l))
 {
-l++;
-}
-else
-{
-l++;
 putchar(i + '0');
 putchar(j + '0');
 putchar(' ');
@@ -35,6 +30,11 @@ putchar(k + '0');
 putchar(l + '0');
 putchar(',');
 putchar(' ');
+l++;
+}
+else
+{
+l++;
 }
 }
 k++;
