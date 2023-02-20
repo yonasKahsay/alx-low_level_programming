@@ -8,6 +8,6 @@ int main(void)
 {
 char out[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-putchar(stderr, out[]);
+putchar(stderr, out[3]);
 return (0);
 }
