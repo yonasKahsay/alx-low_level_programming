@@ -18,7 +18,7 @@ while (j < 10)
 k = i;
 while (k < 10)
 {
-l = j + 1;
+l = j;
 while (l < 10)
 {
 if (i == 9 && j == 8 && k == 9 && l == 9)
@@ -27,6 +27,7 @@ l++;
 }
 else
 {
+l++;
 putchar(i + '0');
 putchar(j + '0');
 putchar(' ');
@@ -34,7 +35,6 @@ putchar(k + '0');
 putchar(l + '0');
 putchar(',');
 putchar(' ');
-l++;
 }
 }
 k++;
