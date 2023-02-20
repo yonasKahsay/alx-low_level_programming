@@ -19,7 +19,7 @@ k = i;
 while (k < 10)
 {
 l = j;
-while (l < 10)
+while (l < 9)
 {
 if (i == 9 && j == 8 && k == 9 && l == 9)
 {
