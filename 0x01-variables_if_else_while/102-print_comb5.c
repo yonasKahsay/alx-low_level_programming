@@ -41,8 +41,6 @@ putchar(' ');
 lastline:
 l++;
 }
-}
-
 else
 {
 l++;
