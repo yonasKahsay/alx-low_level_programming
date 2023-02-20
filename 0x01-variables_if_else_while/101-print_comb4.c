@@ -17,8 +17,8 @@ j = i + 1;
 while (j < 10)
 {
 k = 0;
-k = j + 1 ;
-while (k < 10) 
+k = j + 1;
+while (k < 10)
 {
 putchar(i + '0');
 putchar(j + '0');
