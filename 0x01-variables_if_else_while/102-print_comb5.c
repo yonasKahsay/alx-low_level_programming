@@ -23,15 +23,19 @@ while (l < 10)
 {
 if (((10 * i) + j) < ((10 * k) +l))
 {
+m = (10 * i) + j;
+n = (10 * k) +l;
 putchar(i + '0');
 putchar(j + '0');
 putchar(' ');
 putchar(k + '0');
 putchar(l + '0');
-if (i =! 9 && j != 8 && k != 9 && l != 9)
-{
+if (m == 98 && n == 99)
+{ goto lastline;
+}
 putchar(',');
 putchar(' ');
+lastline:
 l++;
 }
 }
