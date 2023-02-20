@@ -32,15 +32,7 @@ putchar(',');
 putchar(' ');
 l++;
 }
-else if ( i == 9 && j == 8 && k == 9 && l==9)
-{
-puts(i);
-puts(j);
-puts(' ');
-puts(k);
-puts(l);
-break;
-}
+
 else
 {
 l++;
