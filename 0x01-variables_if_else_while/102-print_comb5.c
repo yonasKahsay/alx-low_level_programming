@@ -10,6 +10,9 @@ int i = 0;
 int j;
 int k;
 int l;
+int m;
+int n;
+
 while (i < 10)
 {
 j = 0;
