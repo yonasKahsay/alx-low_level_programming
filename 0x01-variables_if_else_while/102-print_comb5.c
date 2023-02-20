@@ -21,6 +21,8 @@ while (k < 10)
 l = 0;
 while (l < 10)
 {
+if ( i == 9 && j == 8 && k == 9 && l =9)
+
 if (((10 * i) + j) < ((10 * k) +l))
 {
 putchar(i + '0');
@@ -28,6 +30,10 @@ putchar(j + '0');
 putchar(' ');
 putchar(k + '0');
 putchar(l + '0');
+if ( i == 9 && j == 8 && k == 9 && l =9)
+{
+break;
+}
 putchar(',');
 putchar(' ');
 l++;
@@ -43,5 +49,6 @@ j++;
 }
 i++;
 }
+putchar('\n');
 return (0);
 }
