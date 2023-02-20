@@ -21,7 +21,7 @@ while (k < 10)
 l = 0;
 while (l < 10)
 {
-if (((10 * i) +j) < ((10 * k) +l))
+if (((10 * i) + j) < ((10 * k) +l))
 {
 putchar(i + '0');
 putchar(j + '0');
