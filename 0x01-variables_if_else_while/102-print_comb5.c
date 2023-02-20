@@ -33,6 +33,7 @@ putchar(j + '0');
 putchar(' ');
 putchar(k + '0');
 putchar(l + '0');
+putchar(',');
 putchar(' ');
 l++;
 }
