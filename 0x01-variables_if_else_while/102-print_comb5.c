@@ -1,13 +1,11 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - Entry point  
  */
 int main(void)
 {
 int i = 0;
-int j k l m n;
+int j, k, l, m, n;
 
 while (i < 10)
 {
