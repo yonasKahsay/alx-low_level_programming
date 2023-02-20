@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-eprintf(stderr, "and that piece of art is useful\"");
-eprintf(stderr, " - Dora Korpar, 2015-10-19\n");
+eprintf("and that piece of art is useful\"");
+eprintf(" - Dora Korpar, 2015-10-19\n");
 return (0);
 }
