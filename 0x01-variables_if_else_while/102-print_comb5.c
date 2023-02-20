@@ -15,11 +15,10 @@ while (i < 10)
 j = 0;
 while (j < 10)
 {
-k = 0;
 k = i;
 while (k < 10)
 {
-l = 0;
+l = j + 1;
 while (l < 10)
 {
 if (i == 9 && j == 8 && k == 9 && l == 9)
