@@ -1,17 +1,16 @@
 #include <stdio.h>
 /**
  * main - Entry point  
+ * return sucess
  */
 int main(void)
 {
 int i = 0;
 int j, k, l, m, n;
 
-while (i < 10)
-{
+while (i < 10){
 j = 0;
-while (j < 10)
-{
+while (j < 10){
 k = 0;
 while (k < 10)
 {
