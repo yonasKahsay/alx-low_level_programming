@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * print_alphabet_x10 - function
+ *
+ * This prints lower case alphabets ten times
+ */
 void print_alphabet_x10(void)
 	{
 		int j = 0;
@@ -17,12 +22,3 @@ void print_alphabet_x10(void)
 			j++;
 			}
 	}
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-return (0);
-}
