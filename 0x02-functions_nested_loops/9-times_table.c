@@ -35,7 +35,6 @@ void times_table(void)
 				goto lastline;
 			_putchar(',');
 			_putchar(' ');
-			_putchar(' ');
 lastline:
 			j++;
 		}
