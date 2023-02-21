@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * This prints lower case alphabets
+ */
 void print_alphabet(void)
 	{
 		int i = 97;
