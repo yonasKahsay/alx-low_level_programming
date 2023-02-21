@@ -37,7 +37,7 @@ void jack_bauer(void)
 			}
 			j++;
 		}
+		lastline:
 		i++;
 	}
-	lastline:
 	}
