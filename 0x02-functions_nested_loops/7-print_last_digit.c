@@ -10,6 +10,7 @@ int print_last_digit(int n)
 	{
 	int m;
 
-	m = n % 100;
+	m = n % 10;
+	m = m + 48;
 	return (m);
 	}
