@@ -3,16 +3,14 @@
 
 /**
  * print_last_digit - function
- * @n: an inputted letter
+ * @m: an inputted letter
  *
  * Return: m as it is the last digit of the no
  */
-int print_last_digit(int n)
-	{
-	int m;
-	double o;
-	m = _abs(n);
-	o = m % 10;
-	_putchar(o + '0');
-	return (o);
+int print_last_digit(int m)
+	{	
+	m = _abs(m);
+	m = m % 10;
+	_putchar(m + '0');
+	return (m);
 	}
