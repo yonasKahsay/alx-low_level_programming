@@ -1,4 +1,11 @@
-#include <stdio.h>
+#include "main.h"
+
+/**
+ *  _abs - function
+ * @n: an inputted letter
+ *
+ * Return: n if it is positive , -n if it is negative, 0 if it is 0
+ */
 int _abs(int n)
 	{
 	if (n > 0)
@@ -14,12 +21,3 @@ int _abs(int n)
 		return (0);
 		}
 	}
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-return (0);
-}
