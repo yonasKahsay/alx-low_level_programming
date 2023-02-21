@@ -21,6 +21,8 @@ void times_table(void)
 		{
 			_putchar(l + '0');
 			_putchar(',');
+			if (j == 9)
+                                goto lastline;
 			_putchar(' ');
 			_putchar(' ');
 			j++;
@@ -31,7 +33,7 @@ void times_table(void)
 			n = (l - m) / 10;
 			_putchar(n + '0');
 			_putchar(m + '0');
-			if (m == 1 && n == 8)
+			if (j == 9)
 				goto lastline;
 			_putchar(',');
 			_putchar(' ');
