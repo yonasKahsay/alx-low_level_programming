@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include "main.h"
 int _islower(int c)
 	{
 	if (c < 123 && c > 96)
+		putchar('\n');
 		return (1);
 	else
+		putchar('\n');
 		return (0);
 	}
 /**
