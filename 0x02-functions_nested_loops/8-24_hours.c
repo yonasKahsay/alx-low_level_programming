@@ -23,7 +23,7 @@ void jack_bauer(void)
 
 				while (l < 9)
 				{
-					if (i == 2 && j == 4 && k == 0 && l == 0)
+					if (i == 2 && j >= 4)
 						goto lastline;
 					_putchar (i);
 					_putchar (j);
@@ -39,5 +39,5 @@ void jack_bauer(void)
 		}
 		i++;
 	}
-lastline:
+	lastline:
 	}
