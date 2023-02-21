@@ -20,9 +20,9 @@ void times_table(void)
 		if (l < 10)
 		{
 			_putchar(l + '0');
-			_putchar(',');
 			if (j == 9)
 				goto lastline_;
+			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
 lastline_:
