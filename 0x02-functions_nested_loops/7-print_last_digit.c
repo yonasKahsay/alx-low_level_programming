@@ -8,7 +8,7 @@
  * Return: m as it is the last digit of the no
  */
 int print_last_digit(int m)
-	{	
+	{
 	m = _abs(m);
 	m = m % 10;
 	m = _abs(m);
