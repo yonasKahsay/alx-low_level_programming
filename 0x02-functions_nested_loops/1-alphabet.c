@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *function
+ * print_alphabet - function
  *
  * This prints lower case alphabets
  */
-void print_alphabet(void)
+void print_alphabet(void) /** this function prints lower case alphabets */
 	{
 		int i = 97;
 
