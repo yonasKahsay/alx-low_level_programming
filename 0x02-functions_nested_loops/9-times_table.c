@@ -24,6 +24,7 @@ void times_table(void)
 				goto lastline_;
 			_putchar(',');
 			_putchar(' ');
+			if (i * (j + 1) < 10)
 			_putchar(' ');
 lastline_:
 			j++;
