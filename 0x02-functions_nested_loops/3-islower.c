@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *  _islower - function
  * @c: an inputted letter
