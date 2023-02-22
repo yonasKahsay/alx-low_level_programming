@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * times_table - function
+ * print_times_table - function
  * @n: inputted n
  *
  * Return: doesnt return anything
@@ -33,7 +33,7 @@ void print_times_table(int n)
 lastline_:
 			j++;
 		}
-		else if (l < 100)
+		else if (l >= 10 && l < 100)
 		{
 			m = l % 10;
 			n = (l - m) / 10;
