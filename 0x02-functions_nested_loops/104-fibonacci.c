@@ -11,7 +11,7 @@ int main(void)
 	float j = 1, k = 2;
 	int i, m, n;
 
-	printf("%.0f, %.0f", j, k);
+	printf("%.1f, %.1f", j, k);
 	for (i = 0 ; i < 48 ; i++)
 	{
 		printf(", ");
@@ -26,7 +26,7 @@ int main(void)
                 {
 			n = n + m;
                 }
-		printf("%.0f, %.0f", j, k);
+		printf("%.1f, %.1f", j, k);
 	}
 	printf("\n");
 	return (0);
