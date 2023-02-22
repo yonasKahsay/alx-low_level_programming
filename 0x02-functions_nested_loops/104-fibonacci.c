@@ -19,11 +19,12 @@ int main(void)
 		for (m = 0 ; m < 100000 ; m++)
 		{
 			n = 1;
+			n = n + m;
 		}
 		k += j;
 		for (m = 0 ; m < 100000 ; m++)
                 {
-			n = 1;
+			n = n + m;
                 }
 		printf("%.0f, %.0f", j, k);
 	}
