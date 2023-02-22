@@ -7,15 +7,15 @@
  */
 int main(void)
 	{
-	unsigned long int i, j = 1, k = 2;
+	float i, j = 1, k = 2;
 
-	printf("%lu, %lu", j, k);
+	printf("%f, %f", j, k);
 	for (i = 0 ; i < 48 ; i++)
 	{
 		printf(", ");
 		j += k;
 		k += j;
-		printf("%lu, %lu", j, k);
+		printf("%f, %f", j, k);
 	}
 	printf("\n");
 	return (0);
