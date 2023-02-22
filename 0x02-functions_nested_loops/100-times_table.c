@@ -11,7 +11,7 @@ void print_times_table(int n)
 	if (n >= 0 && n <= 15)
 	{
 	int i = 0;
-	int l, m, n, p;
+	int l, m, q, p;
 
 	while (i < (n + 1))
 	{
@@ -34,8 +34,8 @@ lastline_:
 		else if (l >= 10 && l < 100)
 		{
 			m = l % 10;
-			n = (l - m) / 10;
-			_putchar(n + '0');
+			q = (l - m) / 10;
+			_putchar(q + '0');
 			_putchar(m + '0');
 			if (j == n)
 				goto lastline;
@@ -49,10 +49,10 @@ lastline:
 		else
 		{
 			m = l % 10;
-			n = ((l - m) / 10) % 10;
+			q = ((l - m) / 10) % 10;
 			p = 1;
 			_putchar(p + '0');
-			_putchar(n + '0');
+			_putchar(q + '0');
 			_putchar(m + '0');
 			if (j == n)
 				goto lastline__;
