@@ -49,9 +49,8 @@ lastline:
 			p = 1;
 			printf("%d%d%d", p, q, m);
 			if (j == n)
-				goto lastline__;
+				break;
 			printf(", ");
-lastline__:
 			j++;
 		}
 	}
