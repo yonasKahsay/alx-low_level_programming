@@ -9,12 +9,12 @@
 int main(void)
 	{
 	float j = 1, k = 2;
-	int i, m, n;
+	int i;
 
 	printf("%.0f, %.0f", j, k);
 	for (i = 0 ; i < 48 ; i++)
 	{
-		printf(", "};
+		printf(", ");
 		j += k;
 		k += j;
 		printf("%.0f, %.0f", j, k);
