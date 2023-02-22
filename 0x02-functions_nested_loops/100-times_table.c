@@ -62,7 +62,7 @@ lastline__:
 			j++;
 		}
 	}
-	_putchar('\n');
+	printf("\n");
 	i++;
 	}
 	}
