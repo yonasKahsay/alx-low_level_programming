@@ -9,7 +9,7 @@ void print_times_table(int n)
 	{
 	if (n >= 0 && n <= 15)
 	{
-	int i, j, l, m, q, p;
+	int i, j, l;
 
 	for (i = 0 ; i < (n + 1) ; i++)
 	{
@@ -36,8 +36,7 @@ void print_times_table(int n)
 		}
 		else
 		{
-			q = ((l - m) / 10) % 10;
-			printf("%d%d%d", 1, q, l % 10);
+			printf("%d%d%d", 1, ((l - (l % 10)) / 10) % 10, l % 10);
 			if (j == n)
 				break;
 			printf(", ");
