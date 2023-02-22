@@ -15,7 +15,7 @@ int main(void)
 		printf(", ");
 		j += k;
 		k += j;
-		printf("%f, %f", j, k);
+		printf("%.0f, %.0f", j, k);
 	}
 	printf("\n");
 	return (0);
