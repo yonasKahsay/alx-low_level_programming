@@ -10,12 +10,11 @@ void print_times_table(int n)
 	{
 	if (n >= 0 && n <= 15)
 	{
-	int i , j, l, m, q, p;
+	int i, j, l, m, q, p;
 
-	for (i= 0 ; i < (n + 1) ; i++)
+	for (i = 0 ; i < (n + 1) ; i++)
 	{
-	j = 0;
-	while (j < (n + 1))
+	for (j = 0 ; j < (n + 1) ; j++)
 	{
 		l = i * j;
 		if (l < 10)
@@ -26,7 +25,6 @@ void print_times_table(int n)
 			printf(",  ");
 			if (i * (j + 1) < 10)
 			printf(" ");
-			j++;
 		}
 		else if (l >= 10 && l < 100)
 		{
@@ -38,7 +36,6 @@ void print_times_table(int n)
 			printf(", ");
 			if (i * (j + 1) < 100)
 			printf(" ");
-			j++;
 		}
 		else
 		{
@@ -49,7 +46,6 @@ void print_times_table(int n)
 			if (j == n)
 				break;
 			printf(", ");
-			j++;
 		}
 	}
 	printf("\n");
