@@ -7,15 +7,15 @@
  */
 int main(void)
 	{
-	float i, j = 1, k = 2;
+	double i, j = 1, k = 2;
 
-	printf("%g, %g", j, k);
+	printf("%lf, %lf", j, k);
 	for (i = 0 ; i < 48 ; i++)
 	{
 		printf(", ");
 		j += k;
 		k += j;
-		printf("%.xg, %.xg", j, k);
+		printf("%lf, %lf", j, k);
 	}
 	printf("\n");
 	return (0);
