@@ -16,9 +16,9 @@ int main(void)
 	{
 		printf(", ");
 		j += k;
-		delay (30);
+		delay(30);
 		k += j;
-		delay (30);
+		delay(30);
 		printf("%.0f, %.0f", j, k);
 	}
 	printf("\n");
