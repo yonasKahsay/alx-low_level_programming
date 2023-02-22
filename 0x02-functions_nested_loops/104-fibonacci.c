@@ -5,21 +5,18 @@ void delay(int time)
 
 {
 
-// this function will create a pause in the runtime process for the number of milliseconds that is given in 'time'
-
 long pause;
 
-clock_t time1,time2; // data_type variable_name
+clock_t time1,time2;
 
-pause = time ; // if you want to be more accurate replace time with ' time * (CLOCKS_PER_SEC/1000); ' // i.e. 1000
+pause = time ;
 
-time2 = time1 = clock(); // the clock() returns back the number of ticks till it has been called .
-
+time2 = time1 = clock();
 while( (time1-time2) < pause )
 
 {
 
-time1 = clock(); // this will initialize the current number of ticks to time1 ;
+time1 = clock();
 
 }
 
