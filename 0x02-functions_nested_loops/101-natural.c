@@ -13,13 +13,13 @@ int main(void)
 	{
 		if (i % 5 == 0 || i % 3 == 0)
 		{
-			sum += sum;
+			sum = sum + i ;
 		}
 		else
 		{
 		}
 
 	}
-	printf("%d\n", sum);
+	printf("%d \n", sum);
 	return (0);
 	}
