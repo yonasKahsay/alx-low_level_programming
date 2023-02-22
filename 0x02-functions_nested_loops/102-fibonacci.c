@@ -10,7 +10,7 @@ int main(void)
 	long int i, j = 1, k = 2;
 
 	printf("%ld, %ld", j, k);
-	for (i = 0 ; i < 48 ; i++)
+	for (i = 0 ; i < 24 ; i++)
 	{
 		printf(", ");
 		j += k;
