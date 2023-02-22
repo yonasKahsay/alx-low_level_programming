@@ -7,7 +7,7 @@
  */
 int main(void)
 	{
-	unsigned long int i, j = 1, k = 2;
+	long double i, j = 1, k = 2;
 
 	printf("%ld, %ld", j, k);
 	for (i = 0 ; i < 48 ; i++)
