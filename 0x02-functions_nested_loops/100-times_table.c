@@ -25,7 +25,7 @@ void print_times_table(int n)
 			printf("%d", l);
 			if (j == n)
 				goto lastline_;
-			printf(",   ");
+			printf(",  ");
 			if (i * (j + 1) < 10)
 			printf(" ");
 lastline_:
@@ -35,14 +35,12 @@ lastline_:
 		{
 			m = l % 10;
 			q = (l - m) / 10;
-			_putchar(q + '0');
-			_putchar(m + '0');
+			printf("%d%d", q, m);
 			if (j == n)
 				goto lastline;
-			_putchar(',');
-			_putchar(' ');
+			printf(", ");
 			if (i * (j + 1) < 100)
-			_putchar(' ');
+			printf(" ");
 lastline:
 			j++;
 		}
@@ -51,13 +49,10 @@ lastline:
 			m = l % 10;
 			q = ((l - m) / 10) % 10;
 			p = 1;
-			_putchar(p + '0');
-			_putchar(q + '0');
-			_putchar(m + '0');
+			printf("%d%d%d", p, q, m);
 			if (j == n)
 				goto lastline__;
-			_putchar(',');
-			_putchar(' ');
+			printf(", ");
 lastline__:
 			j++;
 		}
