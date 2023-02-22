@@ -3,7 +3,6 @@
 /**
  * print_times_table - function
  * @n: inputted n
- *
  * Return: doesnt return anything
  */
 void print_times_table(int n)
@@ -28,9 +27,7 @@ void print_times_table(int n)
 		}
 		else if (l >= 10 && l < 100)
 		{
-			m = l % 10;
-			q = (l - m) / 10;
-			printf("%d%d", q, m);
+			printf("%d%d", ((l - (l % 10)) / 10), (l % 10));
 			if (j == n)
 				break;
 			printf(", ");
@@ -39,10 +36,8 @@ void print_times_table(int n)
 		}
 		else
 		{
-			m = l % 10;
 			q = ((l - m) / 10) % 10;
-			p = 1;
-			printf("%d%d%d", p, q, m);
+			printf("%d%d%d", 1, q, l % 10);
 			if (j == n)
 				break;
 			printf(", ");
