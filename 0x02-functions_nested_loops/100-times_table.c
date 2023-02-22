@@ -22,11 +22,10 @@ void print_times_table(int n)
 		{
 			printf("%d", l);
 			if (j == n)
-				goto lastline_;
+				break;
 			printf(",  ");
 			if (i * (j + 1) < 10)
 			printf(" ");
-lastline_:
 			j++;
 		}
 		else if (l >= 10 && l < 100)
@@ -35,11 +34,10 @@ lastline_:
 			q = (l - m) / 10;
 			printf("%d%d", q, m);
 			if (j == n)
-				goto lastline;
+				break;
 			printf(", ");
 			if (i * (j + 1) < 100)
 			printf(" ");
-lastline:
 			j++;
 		}
 		else
