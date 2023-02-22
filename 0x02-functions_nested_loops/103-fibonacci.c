@@ -11,7 +11,6 @@ int main(void)
 
 	for (i = 0 ; i < 100 ; i++)
 	{
-		printf(", ");
 		j += k;
 		k += j;
 		if (j > 4000000 || k > 4000000)
