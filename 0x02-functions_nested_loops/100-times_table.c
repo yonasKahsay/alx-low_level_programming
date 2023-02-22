@@ -10,7 +10,7 @@ void print_times_table(int n)
 	{
 	if (n >= 0 && n <= 15)
 	{
-	int i = 0, j, k, l, m, q, p;
+	int i = 0, j, l, m, q, p;
 
 	while (i < (n + 1))
 	{
