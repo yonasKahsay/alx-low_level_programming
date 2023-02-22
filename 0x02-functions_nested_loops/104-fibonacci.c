@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdio.h>i
 /**
  * main - print putchar
  *
@@ -7,7 +7,7 @@
  */
 int main(void)
 	{
-	double i, j = 1, k = 2;
+	float i, j = 1, k = 2;
 
 	printf("%lf, %lf", j, k);
 	for (i = 0 ; i < 48 ; i++)
