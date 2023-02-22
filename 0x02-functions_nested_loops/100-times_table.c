@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_times_table - function
  * @n: inputted n
@@ -22,7 +22,7 @@ void print_times_table(int n)
 		l = i * j;
 		if (l < 10)
 		{
-			_putchar(l + '0');
+			printf("%d", l);
 			if (j == n)
 				goto lastline_;
 			_putchar(',');
