@@ -7,7 +7,7 @@
  */
 int main(void)
 	{
-	int i, j = 1, k = 2;
+	long int i, j = 1, k = 2;
 
 	printf("%d, %d", j, k);
 	for (i = 0 ; i < 48 ; i++)
