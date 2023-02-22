@@ -9,13 +9,13 @@ int main(void)
 	{
 	long int i, j = 1, k = 2;
 
-	printf("%d, %d", j, k);
+	printf("%ld, %ld", j, k);
 	for (i = 0 ; i < 48 ; i++)
 	{
 		printf(", ");
 		j += k;
 		k += j;
-		printf("%d, %d", j, k);
+		printf("%ld, %ld", j, k);
 	}
 	printf("\n");
 	return (0);
