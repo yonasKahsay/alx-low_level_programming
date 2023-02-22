@@ -25,11 +25,9 @@ void print_times_table(int n)
 			printf("%d", l);
 			if (j == n)
 				goto lastline_;
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			printf(",   ");
 			if (i * (j + 1) < 10)
-			_putchar(' ');
+			printf(" ");
 lastline_:
 			j++;
 		}
