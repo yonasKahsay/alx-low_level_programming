@@ -9,16 +9,20 @@
 int main(void)
 	{
 	float j = 1, k = 2;
-	int i;
+	int i, m , n;
 
 	printf("%.0f, %.0f", j, k);
 	for (i = 0 ; i < 48 ; i++)
 	{
 		printf(", ");
 		j += k;
-		delay(30);
+		for (m = 0 ; m < 10000 ; m++)
+		{
+		}
 		k += j;
-		delay(30);
+		for (m = 0 ; m < 10000 ; m++)
+                {
+                }
 		printf("%.0f, %.0f", j, k);
 	}
 	printf("\n");
