@@ -15,7 +15,7 @@ int main(void)
 		printf(", ");
 		j += k;
 		k += j;
-		printf("%ld, %ld", j, k);
+		printf("%lf, %lf", j, k);
 	}
 	printf("\n");
 	return (0);
