@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <time.h>
 /**
  * main - print putchar
  *
@@ -7,14 +8,17 @@
  */
 int main(void)
 	{
-	float i, j = 1, k = 2;
+	float j = 1, k = 2;
+	int i;
 
 	printf("%.0f, %.0f", j, k);
 	for (i = 0 ; i < 48 ; i++)
 	{
 		printf(", ");
 		j += k;
+		delay (30);
 		k += j;
+		delay (30);
 		printf("%.0f, %.0f", j, k);
 	}
 	printf("\n");
