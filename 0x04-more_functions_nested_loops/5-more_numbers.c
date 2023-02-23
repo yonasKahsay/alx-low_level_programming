@@ -18,6 +18,8 @@ void more_numbers(void)
 				f = i % 10;
 				_putchar(f + '0');
 			}
+			if (j == 9)
+				continue;
 			_putchar('\n');
 			j++;
 			}
