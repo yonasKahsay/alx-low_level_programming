@@ -1,4 +1,4 @@
-#include "main1.h"i
+#include "main.h"i
 
 /**
  * print_square - This function checks for uppercase letter
@@ -20,7 +20,7 @@ void print_square(int size)
 			{
 				for (j = 0 ; j < size ; j++)
 				{
-					_putchar('#');
+					_putchar(35);
 				}
 				_putchar('\n');
 			}
