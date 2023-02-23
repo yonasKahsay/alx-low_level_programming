@@ -1,5 +1,5 @@
 #include "main.h"
-i
+
 /**
  * print_triangle - This function prints a triangle
  *@size: The size of the square
@@ -20,7 +20,7 @@ void print_triangle(int size)
 					{
 					_putchar('#');
 					}
-					else 
+					else
 					{
 						_putchar(' ');
 					}
