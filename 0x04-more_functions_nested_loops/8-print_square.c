@@ -1,4 +1,4 @@
-#include "main.h"i
+#include "main.h"
 
 /**
  * print_square - This function checks for uppercase letter
