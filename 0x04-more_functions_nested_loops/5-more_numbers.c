@@ -18,7 +18,7 @@ void more_numbers(void)
 				_putchar(i % 10 + '0');
 			}
 			if (j == 9)
-				continue;
+				break;
 			_putchar('\n');
 			j++;
 			}
