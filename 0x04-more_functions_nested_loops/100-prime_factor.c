@@ -18,6 +18,6 @@ int main(void)
 			i = 1;
 		}
 	}
-		printf("%dBuzz\n", n);
+		printf("%ldBuzz\n", n);
 		return (0);
 	}
