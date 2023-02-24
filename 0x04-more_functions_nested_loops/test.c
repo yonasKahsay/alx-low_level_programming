@@ -3,14 +3,15 @@
 #include <math.h>
 void print_number(int n)
                 {
-                        int i, j, k, u, v;
-                        int p = n;
+                       unsigned int i, j, k, u, v;
+                       unsigned int p;
 
                         if (n < 0)
 			{
                                 putchar('-');
 			n = -1 * n;
 		}
+			p = n;
                         for (i = 1 ; i < 100 ; i++)
                         {
                                 p = p / 10;
@@ -71,7 +72,7 @@ int main(void)
     putchar('\n');
     print_number(402);
     putchar('\n');
-    print_number(1024);
+    print_number(-10000);
     putchar('\n');
     print_number(0);
     putchar('\n');

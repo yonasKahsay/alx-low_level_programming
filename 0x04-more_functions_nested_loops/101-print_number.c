@@ -8,8 +8,8 @@
  */
 void print_number(int n)
 		{
-			int i, j, k, u, v;
-			int p;
+			unsigned int i, j, k, u, v;
+			unsigned int p;
 
 			if (n < 0)
 			{
