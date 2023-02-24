@@ -32,6 +32,27 @@ void print_number(int n)
 				p = n / v;
 				n = n - (p * v);
 				_putchar(p + '0');
+				if (n < v / 10)
+				{
+					_putchar('0');
+					k--;
+					i--;
+				}
+				else if (n < v / 100)
+				{
+					_putchar('0');
+					_putchar('0');
+					k = k - 2;
+					i = i - 2;
+				}
+				else if (n < v / 1000)
+				{
+					_putchar('0');
+					_putchar('0');
+					_putchar('0');
+					k = k - 3;
+					i = i - 3;
+				}
 				k--;
 			}
 		}
