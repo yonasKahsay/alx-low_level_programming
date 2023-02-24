@@ -49,7 +49,7 @@ void print_number(int n)
 				{
 					_putchar('0');
 					_putchar('0');
-					_putchar('0');i
+					_putchar('0');
 					k = k - 3;
 					i = i - 3;
 				}
