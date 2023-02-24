@@ -12,7 +12,10 @@ void print_number(int n)
 			int p = n;
 
 			if (n < 0)
+			{
 				_putchar('-');
+				n = -1 * n;
+			}
 			for (i = 1 ; i < 100 ; i++)
 			{
 				p = p / 10;
