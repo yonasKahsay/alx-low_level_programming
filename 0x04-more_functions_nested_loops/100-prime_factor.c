@@ -10,7 +10,7 @@ int main(void)
 		long long int i;
 		long long int n = 612852475143;
 
-	for (i = 2 ; i <= 100000000 ; i++)
+	for (i = 2 ; i <= 10000 ; i++)
 	{
 		if (n % i == 0)
 		{
@@ -18,6 +18,6 @@ int main(void)
 			i = 1;
 		}
 	}
-		printf("%lldBuzz\n", n);
+		printf("%lld\n", n);
 		return (0);
 	}
