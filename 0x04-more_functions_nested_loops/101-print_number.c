@@ -1,4 +1,5 @@
 #include "main.h"
+#include<math.h>
 /**
  * print_number - This function checks for uppercase letter
  *@n: inputted number
@@ -7,7 +8,7 @@
  */
 void print_number(int n)
 		{
-			int i, j, k;
+			int i, j, k, u, v;
 			int p = n;
 
 			if (n < 0)
@@ -21,8 +22,15 @@ void print_number(int n)
 			k = i - 1;
 			for (j = 0 ; j < i ; j++)
 			{
-				p = n / (10 * *k);
-				n = n - (p * (10 * *k));
+				v = 1;
+				u = 0;
+				while (u < (k - 1))
+				{
+					v = 10 * v;
+					u++;
+				}
+				p = n / v;
+				n = n - (p * v);
 				_putchar(p + '0');
 				k--;
 			}
