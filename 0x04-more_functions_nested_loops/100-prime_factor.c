@@ -7,8 +7,8 @@
  */
 int main(void)
 	{
-		long long int i;
-		long long int n = 612852475143;
+		long int i;
+		long int n = 612852475143;
 
 	for (i = 2 ; i <= 10000 ; i++)
 	{
@@ -18,6 +18,6 @@ int main(void)
 			i = 1;
 		}
 	}
-		printf("%lld\n", n);
+		printf("%ld\n", n);
 		return (0);
 	}
