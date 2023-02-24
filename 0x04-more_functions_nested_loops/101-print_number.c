@@ -9,13 +9,14 @@
 void print_number(int n)
 		{
 			int i, j, k, u, v;
-			int p = n;
+			int p;
 
 			if (n < 0)
 			{
 				_putchar('-');
 				n = -1 * n;
 			}
+			p = n;
 			for (i = 1 ; i < 100 ; i++)
 			{
 				p = p / 10;
