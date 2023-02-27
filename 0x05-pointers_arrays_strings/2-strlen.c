@@ -10,17 +10,14 @@
 int _strlen(char *s)
 		{
 		int i;
-		char c;
+		char c [];
 		char d;
 
 		for (i =0 ;i <100 ; i++)
 		{
-		c = *(s + i);
-		if (c == ' ' && d == ' ')
+		c[i] = *(s + i);
+		if (c[i] == ' ' && c[i+1] == ' ')
                         break;
-		d = *(s + (i + 1));
-		if (c == ' ' && d == ' ')
-			break;
 		}
 		return (i);
 		}
