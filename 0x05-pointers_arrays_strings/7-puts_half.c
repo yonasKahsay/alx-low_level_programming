@@ -22,7 +22,7 @@ void puts_half(char *str)
 			j = i / 2;
 			while(j <= i)
 			{
-				_putchar((*(s + j)));
+				_putchar((*(str + j)));
 				j++;
 			}
 		}
@@ -31,7 +31,7 @@ void puts_half(char *str)
 			j = ((i -1) / 2);
 			while(j <= i)
                         {
-                                _putchar((*(s + j)));
+                                _putchar((*(str + j)));
                                 j++;
                         }
 		}
