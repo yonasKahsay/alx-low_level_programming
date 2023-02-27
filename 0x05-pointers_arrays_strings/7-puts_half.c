@@ -32,10 +32,10 @@ void puts_half(char *str)
 			j = ((i - 1) / 2);
 			j = j + 1;
 			while (j <= i)
-                        {
-                                _putchar((*(str + j)));
-                                j++;
-                        }
+			{
+			_putchar((*(str + j)));
+			j++;
+			}
 		}
 		 _putchar('\n');
 		}
