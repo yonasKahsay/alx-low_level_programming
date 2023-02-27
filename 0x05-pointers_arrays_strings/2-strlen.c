@@ -11,7 +11,6 @@ int _strlen(char *s)
 		{
 		int i;
 		char c [100];
-		char d;
 
 		for (i =0 ;i <100 ; i++)
 		{
