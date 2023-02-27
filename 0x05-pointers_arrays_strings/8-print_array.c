@@ -1,8 +1,8 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 
 /**
- * print_rev - This function prints a string
+ * print_array - This function prints a string
  * @*a: inputted array
  * @n: length of the array
  *
