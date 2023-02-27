@@ -13,7 +13,7 @@ void puts_half(char *str)
 
 		for (i = 0 ; i < 1000 ; i++)
 		{
-		if ((*(s + i)) == '\0')
+		if ((*(str + i)) == '\0')
 		break;
 		}
 		i--;
