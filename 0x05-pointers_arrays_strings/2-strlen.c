@@ -15,7 +15,7 @@ int _strlen(char *s)
 		for (i =0 ;i <100 ; i++)
 		{
 		c[i] = *(s + i);
-		if (c[i] == ' ' && c[i+1] == ' ')
+		if (c[i] == ' ' && c[i-1] == ' ')
                         break;
 		}
 		return (i);
