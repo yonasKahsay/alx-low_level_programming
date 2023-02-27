@@ -9,6 +9,16 @@
  */
 int _strlen(char *s)
 		{
-		int len =strlen((char)*s);
-		return (len);
+		int i;
+		char c;
+		char d;
+
+		for (i =0 ;i <100 ; i++)
+		{
+		c = *(s + i);
+		d = *(s + i + 1);
+		if (c == ' ' && d == ' ')
+			break;
+		}
+		return (i);
 		}
