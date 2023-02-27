@@ -3,7 +3,7 @@
 
 /**
  * puts_half - This function prints a string
- * @s: inputted string
+ * @str: inputted string
  *
  * Return: it returns nothing
  */
@@ -17,10 +17,11 @@ void puts_half(char *str)
 		break;
 		}
 		i--;
-		if(i % 2 == 0)
+		if (i % 2 == 0)
 		{
 			j = i / 2;
-			while(j <= i)
+			j = j + 1;
+			while (j <= i)
 			{
 				_putchar((*(str + j)));
 				j++;
@@ -29,7 +30,8 @@ void puts_half(char *str)
 		else
 		{
 			j = ((i - 1) / 2);
-			while(j <= i)
+			j = j + 1;
+			while (j <= i)
                         {
                                 _putchar((*(str + j)));
                                 j++;
