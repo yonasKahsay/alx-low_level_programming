@@ -17,6 +17,6 @@ int _atoi(char *s)
 			if ((*s + i) <= 57 && (*s + i) >= 48)
 				break;
 		}
-		l = (int)(*s + i);
+		l = (*s + i);
 		return (l);
 		}
