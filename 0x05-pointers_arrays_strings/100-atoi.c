@@ -27,6 +27,7 @@ lastline:
 		d = j;
 		for (j = 1 ; j < d ; j++)
 		{
+			v = 1;
 			for (k = 0 ; k <= (d - j); k++)
 			{
 				v = 10 * v;
