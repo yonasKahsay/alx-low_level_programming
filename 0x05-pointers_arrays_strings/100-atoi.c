@@ -14,7 +14,7 @@ int _atoi(char *s)
 
 		for (i = 0 ; i < 1000 ; i++)
 		{
-			if ((*s + i) <= 57 && (*s + i) >= 48)
+			if ((*s + i) <= 9 && (*s + i) >= 4)
 				break;
 		}
 		l = (int)(*s + i);
