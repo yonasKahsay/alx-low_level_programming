@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
 
 /**
  * _atoi - This function prints a string
@@ -10,7 +11,7 @@
 int _atoi(char *s)
 		{	
 			unsigned int i, j;
-			int l = 0, d;
+			unsigned int l = 0, d;
 
 		for (i = 0 ; i < 1000 ; i++)
 		{
@@ -25,6 +26,6 @@ int _atoi(char *s)
 lastline:
 		d = j;
 		for (j = 1 ; j < d ; j++)
-		l = l + ((*s + (i + j)) - '0') * 10**(d - j) ;
+		l = l + ((*s + (i + j)) - '0') * pow(10,(d - j));
 		return (l);
 		}
