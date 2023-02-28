@@ -10,9 +10,9 @@
  */
 int _atoi(char *s)
 		{	
-			unsigned int i, j;
+			unsigned int i, j, k;
 			unsigned int l = 0, d;
-
+			int v =1;
 		for (i = 0 ; i < 1000 ; i++)
 		{
 			if ((*s + i) <= 57 && (*s + i) >= 48)
@@ -26,6 +26,12 @@ int _atoi(char *s)
 lastline:
 		d = j;
 		for (j = 1 ; j < d ; j++)
-		l = l + ((*s + (i + j)) - '0') * pow(10,(d - j));
+		{
+			for (k = 0 ; k <= (d - j); k++)
+			{
+				v = 10 * v;
+			}
+		l = l + ((*s + (i + j)) - '0') * v;
+		}
 		return (l);
 		}
