@@ -12,7 +12,7 @@ int _strcmp(char *s1, char *s2)
 		{
 		int i, j;
 
-		for (i = 0 ; i < 1000 ; i++)
+		for (i = 0 ; i < 1000000 ; i++)
 		{
 		if (s1[i] == '\0')
 		break;
@@ -23,9 +23,9 @@ int _strcmp(char *s1, char *s2)
 			j++;
 		}
 			if (i < j)
-			return (-1);
+			return (-15);
 			else if (i == j)
 			return (0);
 			else
-			return (1);
+			return (15);
 				}
