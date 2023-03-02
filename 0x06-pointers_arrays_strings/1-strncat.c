@@ -24,10 +24,11 @@ char *_strncat(char *dest, char *src, int n)
 			(*(dest + i)) = (*(src + j));
 			j++;
 			i++;
-		if ((*(src + j)) == '\0' && j == (n - 1))
+		if ((*(src + j)) == '\0' )
 		{
-			j++;
+			break;
 		}
 		}
+		(*(dest + i) = '\0';
 		return (dest);
 		}
