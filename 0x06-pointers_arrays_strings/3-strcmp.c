@@ -2,32 +2,30 @@
 #include <string.h>
 
 /**
- * *_strncpy - This function copies one string to another
- * @src: inputted string
- * @dest: inputted string
- * @n: inputted no of string to concatenate
+ * _strcmp - This funtion returns an integer based on the  comparison of two strings. 
+ * @s1: inputted string
+ * @s2: inputted string
  *
- * Return: it returns a concattenated string
+ * Return: it returns an integer
  */
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 		{
 		int i, j;
 
 		for (i = 0 ; i < 1000 ; i++)
 		{
-		if ((*(dest + i)) == '\0')
+		if (s1[i] == '\0')
 		break;
 		}
 		j = 0;
-		while (j < n && *(src + j) != '\0')
+		while (s2[j] != '\0')
 		{
-			(*(dest + j)) = (*(src + j));
 			j++;
 		}
-		while (j < n)
-		{
-			(*(dest + j)) = '\0';
-			j++;
-		}
-			return (dest);
-		}
+		if ( i < j)
+		       return (-15);
+		else if (i == j)
+			return (0);
+		else
+			return (15);	
+				}
