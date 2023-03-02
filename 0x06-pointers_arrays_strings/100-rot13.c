@@ -8,7 +8,7 @@
  * Return: it returns a converted string
  */
 char *rot13(char *c)
-		{		
+		{
 		int i = 0, j;
 
 		char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -21,6 +21,7 @@ char *rot13(char *c)
 				if (c[i] == input[j])
 				{
 					c[i] = output[j];
+					break;
 				}
 			}
 				i++;
