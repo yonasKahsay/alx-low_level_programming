@@ -8,8 +8,9 @@
  * Return: it returns a converted string
  */
 char *rot13(char *c)
-		{
-		int i, j;
+		{		
+		int i = 0, j;
+
 		char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 		char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
