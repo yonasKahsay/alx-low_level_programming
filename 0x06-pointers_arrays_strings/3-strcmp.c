@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strcmp - This funtion returns an integer based on the  comparison of two strings. 
+ * _strcmp - This funtion returns an integer based on the  comparison.
  * @s1: inputted string
  * @s2: inputted string
  *
@@ -22,10 +22,10 @@ int _strcmp(char *s1, char *s2)
 		{
 			j++;
 		}
-		if ( i < j)
-		       return (-15);
-		else if (i == j)
+			if (i < j)
+			return (-15);
+			else if (i == j)
 			return (0);
-		else
-			return (15);	
+			else
+			return (15);
 				}
