@@ -11,8 +11,13 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 		{
-		int i;
+		int i, j;
 
+		for (i = 0 ; i < 1000 ; i++)
+		{
+		if ((*(dest + i)) == '\0')
+		break;
+		}
 		j = 0;
 		while (j < n && *(src + j) != '\0')
 		{
