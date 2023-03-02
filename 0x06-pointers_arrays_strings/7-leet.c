@@ -15,11 +15,11 @@ char *leet(char *c)
 		char N[] = { '4', '3', '0', '7', '1' };
 
 		while (c[i] != '\0')
-		{	
+		{
 			for (j = 0 ; j < 5 ; j++)
 			{
 				if (c[i] == A[j] || c[i] == a[j])
-					c[i] = N [j];
+					c[i] = N[j];
 			}
 				i++;
 		}
