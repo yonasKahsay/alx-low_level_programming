@@ -14,11 +14,12 @@ char *_strstr(char *haystack, char *needle)
 
 		while (haystack[i] != '\0')
 		{
+			if (haystack[i] == ' ')
+				continue;
 			j = 0;
 			while (needle[j] != '\0')
 			{
-				if (haystack[i] == needle[j] && haystack[i + 1] == needle[j + 1] 
-					&& haystack[i] != ' ' && haystack[i + 1] != ' ')
+				if (haystack[i] == needle[j] && haystack[i + 1] == needle[j + 1])
 				{
 				goto lastline;
 				}
