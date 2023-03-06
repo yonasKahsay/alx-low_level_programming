@@ -11,12 +11,7 @@ void print_chessboard(char (*a)[8])
 		{
 		 int i, j, k;
 
-		while (**(a + k) != '\0')
-			{
-			k++;
-			}
-
-		for (i = 0 ; i < a[i][7] ; i++)
+		for (i = 0 ; i < a[i][8] ; i++)
 		{
 			for (j = 0; j < 8 ; j++)
 			{
