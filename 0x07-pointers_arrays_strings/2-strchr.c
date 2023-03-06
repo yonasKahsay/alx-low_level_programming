@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * *_strchr - fills the first n memory byters with a constant
+ * *_strchr - returns the pointer on the string that has the same value as c
  * @s: pointer to  data of string
  * @c: character to match to
  *
