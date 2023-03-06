@@ -9,7 +9,7 @@
  */
 void print_chessboard(char (*a)[8])
 		{
-		 int i, j, k;
+		 int i, j;
 
 		for (i = 0 ; i < a[i][8] ; i++)
 		{
