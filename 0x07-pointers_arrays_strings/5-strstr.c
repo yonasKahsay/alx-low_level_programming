@@ -17,18 +17,13 @@ char *_strstr(char *haystack, char *needle)
 			j = 0;
 			while (needle[j] != '\0')
 			{
-				if (haystack[i] == needle[j] && haystack[i + 1] == needle[j + 1] && needle[j] != ' ' && needle [j + 1] != ' ')
+				if (haystack[i] == needle[j] && haystack[i + 1] == needle[j + 1])
 				{
-				goto lastline;
+				return (haystack + i);
 				}
 				j++;
 			}
 			i++;
 		}
-lastline:
-			if (haystack[i] == '\0' || needle[j] == '\0')
-		{
 			return (NULL);
-		}
-		return (haystack + i);
 		}
