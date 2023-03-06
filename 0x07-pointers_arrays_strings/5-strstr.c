@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 			{
 				if (haystack[i] == needle[j])
 					x++;
-				if (haystack[i] == needle[j] && x == 2)
+				if (haystack[i] == needle[j] && x == 4)
 				{
 				goto lastline;
 				}
