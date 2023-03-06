@@ -3,7 +3,7 @@
 
 /**
  * *_strchr - fills the first n memory byters with a constant
- * @s: pointer to  data of string
+ * @*s: pointer to  data of string
  * @c: character to match to
  *
  * Return: it returns a pointer to the first appearance of the letter c
