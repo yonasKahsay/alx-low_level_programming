@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 
 /**
  * print_diagsums - gets the sum of the diagonals of the array
@@ -18,9 +18,9 @@ void print_diagsums(int *a, int size)
 			for (j = 0; j < size ; j++)
 			{
 				if (i == j)
-				sum1 = a[i][j] + sum1;
+				sum1 = *(a + i) + j + sum1;
 				if (i + j == size)
-				sum2 = a[i][j] + sum2;
+				sum2 = *(a + i) + j + sum2;
 			}
 		}
 		printf("%d, %d", sum1, sum2);
