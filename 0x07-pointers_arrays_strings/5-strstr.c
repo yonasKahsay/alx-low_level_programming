@@ -22,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 				if (haystack[i] == needle[0])
 				{
-					for (k = 0 ; k < (l - 1) ; k++)
+					for (k = 0 ; k < (l) ; k++)
 				{
 					if (haystack[i + k] != needle[k])
 						goto lastline;
