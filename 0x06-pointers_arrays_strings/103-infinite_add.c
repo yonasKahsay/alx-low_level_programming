@@ -9,8 +9,7 @@
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		{
 			int i = 0, j = 0, n;
-			r[size_r];
-			char remain[size_r];
+			char *remain[1000];
 			
 			while (n1[i] != '\0')
 			{
@@ -20,8 +19,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			{
 				j++;
 			}
-			if (i > r || j > r)
-				return '0';
+			if (i > size_r || j > size_r)
+				return 0;
 			if (i >= j)
 			n = i;
 			else
@@ -29,15 +28,15 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		remain[size_r - 2] = 0;
 		for ( ; n >= 0 ; n--)
 		{
-			r[size_r - 1] = n1[i - 1]  + n2[j - 1] + remain[size_r - 2];
+			r[size_r - 1] = (n1[i - 1]  + n2[j - 1] + remain[size_r - 2]);
 			if (r[size_r - 1] > 9)
 			{
 				r[size_r - 1] = r[size_r - 1] % 10;
-				remain[size_r - 2] = 1;
+				remain[size_r - 2] = '1';
 			}
 			else
 			{
-				remain[size_r - 2] = 0;
+				remain[size_r - 2] = '0';
 			}	
 			i--;
 			j--;
