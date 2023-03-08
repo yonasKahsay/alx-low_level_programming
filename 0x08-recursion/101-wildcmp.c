@@ -29,12 +29,12 @@ int wildcmp(char *s1, char *s2)
 int check_wildcmp(char *s1, char *s2, char *e1, char *e2)
 		{
 			if (*s2 == '*' && *e2 == '*')
- 				return (1);
+				return (1);
 			if (*s1 == *s2 && *e1 == *e2)
 				return (1);
- 			if ((*s1 != *s2 || *e1 != *e2) && (*s2 != '*' || *e2 != '*'))
- 				return (0);
 			if(*s2 == '*' && *e2 == *e1)
 				return (1);
+			if ((*s1 != *s2 || *e1 != *e2) && (*s2 != '*' || *e2 != '*'))
+				return (0);
 			return (5);
 		}
