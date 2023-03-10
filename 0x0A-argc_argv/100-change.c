@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		if (argc != 2)
 		{
 		printf("Error\n");
-		return 1;
+		return (1);
 		}
 		change = atoi(argv[1]);
 		if (change < 0)
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 		change = change - (count4 * 2);
 		count5 = changecoin(change, 1);
 		change = change - (count5 * 1);
-		count1= count1 + count2 + count3 + count4 + count5;
+		count1 = count1 + count2 + count3 + count4 + count5;
 		printf("%d\n", count1);
 		return (0);
 		}
