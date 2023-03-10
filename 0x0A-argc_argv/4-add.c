@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -21,15 +22,17 @@ int main(int argc, char *argv[])
 		}
 		for (i = 1 ; i < argc ; i++)
 		{
-		if (isdigit(*argv[i]) == 0)
+		long unsigned int j = 0;
+
+		for (j = 0; j < strlen(argv[i]) ; j++)
+		{
+		if (isdigit(*argv[j]) == 0)
 		{
 		printf("Error\n");
 		return (1);
 		}
-		else
-		{
-		m += atoi(argv[i]);
 		}
+		m += atoi(argv[i]);
 		}
 		printf("%d\n", m);
 		return (0);
