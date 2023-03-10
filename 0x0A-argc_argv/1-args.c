@@ -8,8 +8,8 @@
  *
  * Return: it returns 0 if the program compiles ok
  */
-int main(__attribute__((unused))int argc,__attribute__((unused)) char *argv[])
+int main(int argc,__attribute__((unused)) char *argv[])
 		{
-		printf("%d\n", argc);
+		printf("%i\n", argc);
 		return (0);
 		}
