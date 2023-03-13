@@ -12,10 +12,10 @@ char *str_concat(char *s1, char *s2)
 		{
 		unsigned int i = 0, j = 0, k = 0;
 		char *ret;
+		char *empty ="";
 
 		while (s1[i] != 0)
-		{	if (s1[i] == NULL)
-				i++;
+		{
 		i++;
 		}
 		while (s2[j] != 0)
@@ -27,8 +27,8 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 		for (k = 0; k < i ; k++)
 		{
-		if (s1[k] == NULL)
-			ret[k] = "";
+		if (s1 == NULL)
+			ret[k] = empty[0];
 		ret[k] = s1[k];
 		}
 		for (i = 0 ; i <= j ; i++)
