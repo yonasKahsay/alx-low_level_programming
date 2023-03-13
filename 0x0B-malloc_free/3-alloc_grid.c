@@ -22,7 +22,7 @@ int **alloc_grid(int width, int height)
 			free(ret);
 			return (NULL);
 		}
-		retun = malloc(4 * height * width);
+		retun = malloc(sizeof(int*) * height * width);
 		for (j = 0 ; j < (height * width) ; j++)
 		{
 			ret[i] = 0;
