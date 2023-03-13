@@ -18,7 +18,10 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		ret = malloc(4 * height * width);
 		if (ret == NULL)
+		{
+			free(ret);
 			return (NULL);
+		}
 		retun = malloc(2 * height * width);
 		for (j = 0 ; j < (height * width) ; j++)
 		{
