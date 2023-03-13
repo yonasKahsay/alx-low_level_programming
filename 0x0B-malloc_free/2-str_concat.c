@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 		for (k = 0; k < i ; k++)
 		{
 		if (s1 == NULL)
-		s1 = s1 + 1;
+		s[k] = s[k+1]
 		ret[k] = s1[k];
 		}
 		for (i = 0 ; i <= j ; i++)
