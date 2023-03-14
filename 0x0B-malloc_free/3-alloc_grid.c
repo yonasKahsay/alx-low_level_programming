@@ -16,20 +16,22 @@ int **alloc_grid(int width, int height)
 
 		if (width <= 0 || height <= 0)
 			return (NULL);
-		ret = malloc(4 * height * width);
-		if (ret == NULL)
+		ret = malloc(sizeof(int) * width * height);
+		retun = malloc(sizeof(ret) * height);
+		if (ret == NULL || retun == NULL)
 		{
 			free(ret);
+			free(retun);
 			return (NULL);
 		}
-		retun = malloc(sizeof(int*) * height * width);
-		for (j = 0 ; j < (height * width) ; j++)
+		*retun = ret;
+		for (j = 0 ; j < (width) ; j++)
 		{
-			ret[i] = 0;
+			ret[j] = 0;
 		}
 		for (i = 0 ; i < height ; i++)
 		{
-			*(retun + i) = ret + i * width;
+			retun[i] = ret + width * i;
 		}
 		return (retun);
 		}
