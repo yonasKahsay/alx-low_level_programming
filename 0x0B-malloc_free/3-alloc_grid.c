@@ -26,6 +26,7 @@ int **alloc_grid(int width, int height)
 		if (retun == NULL)
 		{
 		free(retun);
+		free(ret);
 		return (NULL);
 		}
 		retun[0] = ret;
