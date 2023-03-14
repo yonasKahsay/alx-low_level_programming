@@ -30,14 +30,14 @@ int **alloc_grid(int width, int height)
 				free(retun[i]);
 			}
 		}
-		*retun = ret;
+		retun[0] = ret;
 		for (j = 0 ; j < (width * height) ; j++)
 		{
 			ret[j] = 0;
 		}
 		for (i = 0 ; i < height ; i++)
 		{
-			retun[i] = ret + i;
+			retun[i] = retun[0] + i * width;
 		}
 		return (retun);
 		}
