@@ -22,7 +22,8 @@ int **alloc_grid(int width, int height)
 			free(ret);
 			return (NULL);
 		}
-		retun = malloc(sizeof(int*) * height);
+		retun = malloc(sizeof(ret) * height);
+		*retun = ret;
 		for (i = 0 ; i < height ; i++)
 		{
 			if (retun[i] == NULL)
@@ -31,11 +32,9 @@ int **alloc_grid(int width, int height)
 			{
 				free(retun[j]);
 			}
-				free(ret);
 				return (NULL);
 		}
 		}
-		*retun = ret;
 		for (j = 0 ; j < (width * height) ; j++)
 		{
 			ret[j] = 0;
