@@ -25,7 +25,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 		*retun = ret;
-		for (j = 0 ; j < (width) ; j++)
+		for (j = 0 ; j < (width * height) ; j++)
 		{
 			ret[j] = 0;
 		}
