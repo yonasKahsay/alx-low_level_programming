@@ -17,17 +17,17 @@ char **strtow(char *str)
 			return (NULL);
 		while (str[count] != '\0')
 		{
-			if (str[count] == ' ')
+			if (str[count] == ' ' || str[count] == '	')
 				count_space++;
 			count++;
 		}
 		word = malloc(sizeof(char) * count);
 		if (word == NULL)
 			return (NULL);
-		for (i = 0 ; i < count_space ; i++)
+		for (i = 0 ; i <= count_space ; i++)
 		{
 			word[i] = str + k;
-			for (j = 0; k < count ; j++)
+			for (j = 0; k <= count ; j++)
 			{
 				if (str[k] == ' ' || str[k] == '	')
 				{
