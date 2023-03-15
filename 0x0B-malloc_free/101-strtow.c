@@ -10,7 +10,7 @@
  */
 char **strtow(char *str)
 		{
-		int i, j = 0, k, count = 0, count_space = 0;
+		int i, j = 0, k = 0, count = 0, count_space = 0;
 		char **word;
 
 		if (*str == '\0' || str == NULL)
@@ -24,17 +24,15 @@ char **strtow(char *str)
 		word = malloc(sizeof(char) * count * count_space);
 		if (word == NULL)
 			return (NULL);
-		word[0] = str;
 		for (i = 0 ; i < count_space ; i++)
 		{
+			word[i] = str + k;
 			for (j = 0; k < count ; j++)
 			{
 				if (str[k] == ' ' || str[k] == '	')
 				{
 					word[i][j] = '\0';
 					k++;
-					word[i][j + 1] = '\n';
-					word[i][j + 2] = '\0';
 					break;
 				}
 				word[i][j] = str[k];
