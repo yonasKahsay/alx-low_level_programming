@@ -21,7 +21,7 @@ char **strtow(char *str)
 				count_space++;
 			count++;
 		}
-		word = malloc(sizeof(char) * count * count_space);
+		word = malloc(sizeof(char) * count);
 		if (word == NULL)
 			return (NULL);
 		for (i = 0 ; i < count_space ; i++)
