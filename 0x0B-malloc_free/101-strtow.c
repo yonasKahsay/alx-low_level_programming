@@ -24,6 +24,7 @@ char **strtow(char *str)
 		word = malloc(sizeof(char) * count);
 		if (word == NULL)
 			return (NULL);
+		word[0] = str;
 		for (i = 0 ; i < count_space ; i++)
 		{
 			for (j = 0; k < count ; j++)
