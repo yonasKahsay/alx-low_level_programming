@@ -34,22 +34,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		else
 		{
-		m = i + n +1;
+		m = i + n + 1;
 		ret = malloc(sizeof(char) * (m));
 		}
 		if (ret == NULL)
 			return (NULL);
-		ret[0] = s1[0];
-		for (k = 0 ; k < (m - 1) ; k++)
+		for (k = 0 ; k < m  ; k++)
 		{
 			if (k < i)
 				ret[k] = s1[k];
+			else if (k == m - 1)
+				{
+				ret[k] = '\0';
+				}
 			else
 				{
 				ret[k] = s2[l];
 				l++;
 				}
 		}
-			ret[k] = '\0';
 		return (ret);
 		}
