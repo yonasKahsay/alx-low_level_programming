@@ -13,16 +13,16 @@
  */
 int main(int argc, char *argv[])
 		{
-		int m = 0, i;
+		int i;
 
 		if (argc != 3)
 		{
-		printf("Error\n");
+		printf("Error\n";
 		exit(98);
 		}
 		for (i = 1 ; i < argc ; i++)
 		{
-		unsigned long int j = 0;
+		unsigned long int j = 0, m;
 
 		for (j = 0; j < strlen(argv[i]) ; j++)
 		{
