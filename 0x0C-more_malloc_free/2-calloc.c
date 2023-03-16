@@ -23,6 +23,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		{
 			ret[i] = 0;
 		}
-		retu = (void *) ret;
+		retu = (void *)ret;
 		return (retu);
 		}
