@@ -12,17 +12,17 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		{
 		unsigned int i;
 		char *ret;
-		void *retu;
+		/**void *retu;*/
 
 		if (nmemb == 0 || size == 0)
 			return (NULL);
 		ret = malloc(size * nmemb);
 		if (ret == NULL)
 			return (NULL);
-		for (i = 0 ; i < (nmemb) ; i++)
+		for (i = 0 ; i < (nmemb * size) ; i++)
 		{
 			ret[i] = 0;
 		}
-		retu = (void *)ret;
-		return (retu);
+		/**retu = (void *)ret;*/
+		return (ret);
 		}
