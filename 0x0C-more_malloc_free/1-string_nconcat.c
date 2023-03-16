@@ -28,15 +28,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		if (n >= j)
 			n = j - 1;
-		ret = malloc(sizeof(char) * (i + n));
+		ret = malloc(sizeof(char) * (i + 1 + n));
 		if (ret == NULL)
 			return (NULL);
 		for (k = 0 ; k <= (n + i) ; k++)
 		{
 			if (k < i)
 				ret[k] = s1[k];
-			else if (k == (n + i))
+			else if (k == (n + 1 + i))
+				{
 				ret[k] = '\0';
+				break;
+				}
 			else
 				{
 				ret[k] = s2[l];
