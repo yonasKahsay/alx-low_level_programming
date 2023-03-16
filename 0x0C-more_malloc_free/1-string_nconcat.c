@@ -35,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			if (k < i)
 				ret[k] = s1[k];
-			else if (k == (n + 1 + i))
+			else if (s2[l] == '\0')
 				{
 				ret[k] = '\0';
 				break;
