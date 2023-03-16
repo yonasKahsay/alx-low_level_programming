@@ -11,7 +11,7 @@ int main(void)
 {
     char *concat;
 
-    concat = string_nconcat("Best is the most tele ", "School !!!", 9);
+    concat = string_nconcat("Best is the most tele ", "School !!!", 11);
     printf("%s\n", concat);
     free(concat);
     return (0);

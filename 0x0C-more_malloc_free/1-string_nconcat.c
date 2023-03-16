@@ -29,22 +29,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (n >= j)
 		n = j;
 		m = i + n;
-		ret = malloc(sizeof(char) * (m));
+		ret = malloc(sizeof(char) * (m + 1));
 		if (ret == NULL)
 			return (NULL);
 		for (k = 0 ; k < m  ; k++)
 		{
 			if (k < i)
 				ret[k] = s1[k];
-			else if (k == m)
-				{
-				ret[k] = '\0';
-				}
 			else
 				{
 				ret[k] = s2[l];
 				l++;
 				}
 		}
+		ret[k] = '\0';
 		return (ret);
 		}
