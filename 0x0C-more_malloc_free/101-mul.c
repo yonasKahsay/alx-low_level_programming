@@ -14,16 +14,15 @@
 int main(int argc, char *argv[])
 		{
 		int i;
+		unsigned long int j = 0, m;
 
 		if (argc != 3)
 		{
-		printf("Error\n";
+		printf("Error\n");
 		exit(98);
 		}
 		for (i = 1 ; i < argc ; i++)
 		{
-		unsigned long int j = 0, m;
-
 		for (j = 0; j < strlen(argv[i]) ; j++)
 		{
 		if (isdigit(argv[i][j]) == 0)
@@ -34,6 +33,6 @@ int main(int argc, char *argv[])
 		}
 		}
 		m = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", m);
+		printf("%ld\n", m);
 		return (0);
 		}
