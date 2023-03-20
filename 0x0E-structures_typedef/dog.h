@@ -18,4 +18,5 @@ void print_dog(struct dog *d);
  *dog_t- typedef for struct dog
  */
 typedef struct dog dog_t;
+void free_dog(dog_t *d);
 #endif
