@@ -5,6 +5,8 @@
 
 /**
  * main - check the code
+ *@argc: argument count
+ *@argv: the argument type
  *
  * Return: Always 0.
  */
@@ -17,8 +19,8 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			exit(98);
 			}
-		if (*argv[2] == '+' || *argv[2] == '-' || *argv[2] == '*' || *argv[2] == '/' ||
-			*argv[2] == '%')
+		if (*argv[2] == '+' || *argv[2] == '-' || *argv[2] == '*' ||
+			 *argv[2] == '/' || *argv[2] == '%')
 			{
 			}
 		else
