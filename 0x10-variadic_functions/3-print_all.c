@@ -3,8 +3,7 @@
 
 /**
  * print_all - prints all arguments passed
- * @n: number of argument
- * @separator: separator character for the string
+ * @format: format of argument to be printed
  *
  * Return: it returns nothing
  */
