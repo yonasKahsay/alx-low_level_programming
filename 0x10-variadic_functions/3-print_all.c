@@ -19,13 +19,13 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 				{
 				case 'c':
-					printf("%s%c", com, va_arg(argu, int));
+					printf("%s%c", com, va_arg(argu, char));
 					break;
 				case 'i':
 					printf("%s%d", com, va_arg(argu, int));
 					break;
 				case 'f':
-					printf("%s%f", com, va_arg(argu, double));
+					printf("%s%f", com, va_arg(argu, float));
 					break;
 				case 's':
 					c = va_arg(argu, char *);
@@ -41,4 +41,5 @@ void print_all(const char * const format, ...)
 			i++;
 			}
 			printf("\n");
+			va_end(argu);
 			}
