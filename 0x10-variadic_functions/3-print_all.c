@@ -13,9 +13,9 @@ void print_all(const char * const format, ...)
 		unsigned int i = 0;
 		char *c, *com = "";
 
-		if (format == NULL)
-			return;
 		va_start(argu, format);
+		if (format != NULL)
+		{
 		while (format[i] != '\0')
 			{
 			switch (format[i])
@@ -41,6 +41,7 @@ void print_all(const char * const format, ...)
 			}
 			com = ", ";
 			i++;
+			}
 			}
 			printf("\n");
 			va_end(argu);
