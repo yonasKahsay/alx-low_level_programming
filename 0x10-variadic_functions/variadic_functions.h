@@ -10,4 +10,18 @@ int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
+/**
+  *op_t - subtracts numbers
+  *@sy: symbol for data type
+  *@typ: type of data type
+  *@pr : print type
+  *
+  *Return: it returns difference
+  */
+typedef struct op
+{
+char *sy;
+char *typ;
+char *pr;
+  } op_t;
 #endif
