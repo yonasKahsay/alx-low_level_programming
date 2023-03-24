@@ -18,10 +18,4 @@ void print_all(const char * const format, ...);
   *
   *Return: it returns difference
   */
-typedef struct op
-{
-char *sy;
-char *typ;
-char *pr;
-  } op_t;
 #endif
