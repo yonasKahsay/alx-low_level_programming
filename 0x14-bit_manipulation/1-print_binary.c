@@ -4,8 +4,9 @@
 /**
  * print_binary - prints the binary equivalent of a decimal number
  * @n: number to print in binary
+ *
+ * Return: Returns nothing
  */
-
 void print_binary(unsigned long int n)
 {
     if (n > 1) 
