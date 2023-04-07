@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * print_binary - prints the binary equivalent of a decimal number
+ * get_bit - prints index equivalent of a decimal number
  * @n: number to print in binary
+ * @index: the index to print
  *
- * Return: Returns nothing
+ * Return: Returns index
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
