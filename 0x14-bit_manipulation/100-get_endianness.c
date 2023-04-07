@@ -2,9 +2,9 @@
 /**
 * get_endianness - checks for endianness
 * 
-* Return: Returns nothing
+* Return: Returns 1 or zero
 */
-int get_endianness(void)
+int get_endianness()
 {
   int n = 1;
   char *endian = (char*)&n;
