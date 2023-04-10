@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
@@ -43,3 +44,20 @@ here:
 				 goto here;
 		}
 	}
+=======
+#include "main.h"
+/**
+ * print_binary - prints the binary equivalent of a decimal number
+ * @n: number to print in binary
+ *
+ * Return: Returns nothing
+ */
+void print_binary(unsigned long int n)
+{
+    if (n > 1)
+    {
+        print_binary(n >> 1);
+    }
+        _putchar((n & 1) ? '1' : '0');
+}
+>>>>>>> 86e20300ac1e31bc567bd2159e9fe09fa174bd86
