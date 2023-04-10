@@ -12,20 +12,20 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 								{
-									int length;
-									FILE *file;
+					int length;
+					FILE *file;
 
-									if (filename == NULL)
-									return (-1);
-									file = fopen(filename, "a");
-									if (file == NULL)
-									return (-1);
-									if (text_content != NULL)
-									{
-									length = strlen(text_content);
-									fwrite(text_content,sizeof(char), length, file);
-									}
-									fclose(file);
-									return (1);
-									}
+					if (filename == NULL)
+						return (-1);
+					file = fopen(filename, "a");
+					if (file == NULL)
+						return (-1);
+					if (text_content != NULL)
+					{
+						length = strlen(text_content);
+						fwrite(text_content , sizeof(char) , length, file);
+					}
+					fclose(file);
+					return (1);
+					}
 
